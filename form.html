@@ -38,73 +38,73 @@
       <form action="https://echo.htmlacademy.ru/" method="post" class="review__form">
         <fieldset class="review__group">
           <legend class="review__group-title">Представьтесь:</legend>
-          <p class="review__row">
+          <div class="form-field">
             <label for="name">Имя*:</label>
             <input type="text" id="name" name="name" placeholder="Петр" required>
-          </p>
-          <p class="review__row">
+          </div>
+          <div class="form-field">
             <label for="surname">Фамилия*:</label>
             <input type="text" id="surname" name="surname" placeholder="Иванов" required>
-          </p>
-          <p class="review__row">
+          </div>
+          <div class="form-field">
             <label for="patronymic">Отчество:</label>
             <input type="text" id="patronymic" name="patronymic" placeholder="Александрович">
-          </p>
+          </div>
         </fieldset>
 
         <fieldset class="review__group">
           <legend class="review__group-title">Контактная информация:</legend>
-          <p class="review__row">
+          <div class="form-field">
             <label for="nubmer">Контактный телефон*:</label>
             <input type="tel" id="number" name="number" placeholder="Введите телефон" required>
-          </p>
-          <p class="review__row">
+          </div>
+          <div class="form-field">
             <label for="email">Электронная почта*:</label>
             <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
-          </p>
+          </div>
         </fieldset>
 
         <fieldset class="review__group">
           <legend class="review__group-title">Ваше общее впечатление:</legend>
-          <p class="review__row">
+          <div class="form-field">
             <input type="radio" id="positive" value="positive" name="impression" checked>
             <label for="positive">Скорее положительное</label>
-          </p>
-          <p class="review__row">
+          </div>
+          <div class="form-field">
             <input type="radio" id="negative" value="negative" name="impression">
-            <label for="negative" required>Скорее отрицательное</label>
-          </p>
-          <p class="review__row">
+            <label for="negative">Скорее отрицательное</label>
+          </div>
+          <div class="form-field">
             <input type="radio" id="difficult-to-answer" value="difficult-to-answer" name="impression">
-            <label for="difficult-to-answer" required>Затрудняюсь ответить</label>
-          </p>
+            <label for="difficult-to-answer">Затрудняюсь ответить</label>
+          </div>
         </fieldset>
 
         <fieldset class="review__group">
           <legend class="review__group-title">Посещенные достопримечательности:</legend>
-          <p class="review__row">
+          <div class="form-field">
             <input type="checkbox" id="devils-bridge" value="devils-bridge" checked>
             <label for="devils-bridge">Мост Дьявола</label>
-          </p>
-          <p class="review__row">
+          </div>
+          <div class="form-field">
             <input type="checkbox" id="slide-park" value="slide-park" checked>
-            <label for="slide-park" required>Слайд-парк</label>
-          </p>
-          <p class="review__row">
+            <label for="slide-park">Слайд-парк</label>
+          </div>
+          <div class="form-field">
             <input type="checkbox" id="bell-rock" value="bell-rock">
-            <label for="bell-rock" required>Гора-Колокол</label>
-          </p>
-          <p class="review__row">
+            <label for="bell-rock">Гора-Колокол</label>
+          </div>
+          <div class="form-field">
             <input type="checkbox" id="red-rocks" value="red-rocks" checked>
-            <label for="red-rocks" required>Красные скалы</label>
-          </p>
+            <label for="red-rocks">Красные скалы</label>
+          </div>
         </fieldset>
 
         <fieldset class="review__group">
           <legend class="review__group-title">Опишите свои эмоции:</legend>
-          <p class="review__row">
+          <div class="form-field">
             <textarea name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
-          </p>
+          </div>
         </fieldset>
 
         <button class="review__btn btn" type="submit">Отправить отзыв</button>
