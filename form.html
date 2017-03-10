@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -15,16 +17,16 @@
         </ul>
       </nav>
 
-      <div class="logo">
-        <a href="index.html" class="logo__link">
-          <img src="http://placehold.it/102x83" width="102" height="83" alt="Город Седона">
-        </a>
+      <div class="page-header__row">
+        <div class="logo">
+          <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Город Седона">
+        </div>
+
+        <span class="main-menu-toggle"></span>
       </div>
 
-      <span class="main-menu-toggle"></span>
-
-      <div class="intro">
-        <img src="http://placehold.it/229x39" width="229" height="39" alt="Седона">
+      <div class="intro intro--small">
+        <img src="img/text-sedona.svg" width="229" height="39" alt="Седона">
       </div>
 
       <h1 class="page-title">Оставьте свой отзыв</h1>
@@ -125,10 +127,9 @@
       </section>
 
       <section class="page-footer__copyright">
-        Разработано:
+        <span class="page-footer__copyright-text">Разработано</span>
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          HTML Academy
-          <img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
       </section>
     </footer>

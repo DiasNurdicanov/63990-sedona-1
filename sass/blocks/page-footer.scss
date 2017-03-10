@@ -1,12 +1,12 @@
-.page-footer{
+.page-footer {
   padding: 20px;
   text-align: center;
 }
-.page-footer__hashtag{
+.page-footer__hashtag {
   padding-top: 15px;
   padding-bottom: 17px;
 
-  a{
+  a {
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
@@ -15,22 +15,22 @@
     line-height: 26px;
   }
 }
-.page-footer__copyright{
+.page-footer__copyright {
   font-size: 0;
   padding-top: 20px;
 }
-.page-footer__copyright-text{
+.page-footer__copyright-text {
   display: inline-block;
   vertical-align: middle;
   font-size: $font-size;
   margin-right: 10px;
   text-transform: uppercase;
 }
-.page-footer__copyright-link{
+.page-footer__copyright-link {
   display: inline-block;
   vertical-align: middle;
 
-  img{
+  img {
     vertical-align: middle;
   }
 }

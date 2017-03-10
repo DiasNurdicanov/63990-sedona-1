@@ -1,25 +1,25 @@
-.social{
+.social {
   padding: 20px;
   text-align: center;
 }
-.social__list{
+.social__list {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0;
 }
-.social__item{
+.social__item {
   display: inline-block;
   vertical-align: top;
   width: 46px;
   background: $color-main;
   margin-right: 6px;
 
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
 }
-.social__item-link{
+.social__item-link {
   display: block;
   height: 48px;
   background: url(../img/icon-twitter.svg) no-repeat center;

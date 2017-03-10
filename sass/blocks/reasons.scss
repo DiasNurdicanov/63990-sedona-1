@@ -1,4 +1,4 @@
-.reasons{
+.reasons {
   padding-top: 15px;
   text-align: center;
 }
@@ -32,7 +32,7 @@
       background: $gray--darken;
     }
   }
-  &--bg-gray:last-child::after{
+  &--bg-gray:last-child::after {
     display: none;
   }
 }
