@@ -1,0 +1,23 @@
+.search {
+  padding: 30px 20px 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.search__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: $font-size--big;
+  font-weight: 700;
+  line-height: 1.27;
+}
+.search_desc {
+  margin: 0;
+  margin-bottom: 35px;
+}
+.search__btn {
+  font-size: $font-size--big;
+  line-height: 26px;
+  padding: 17px 15px;
+  width: 100%;
+  font-weight: 700;
+}
