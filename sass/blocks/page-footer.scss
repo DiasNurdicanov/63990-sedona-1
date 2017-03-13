@@ -34,3 +34,17 @@
     vertical-align: middle;
   }
 }
+@media (min-width: $tablet-widths) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 60px;
+  }
+  .page-footer__hashtag {
+    padding: 0;
+  }
+  .page-footer__copyright {
+    padding: 0;
+  }
+}

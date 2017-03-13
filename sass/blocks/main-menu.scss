@@ -39,3 +39,37 @@
   background: url(../img/icon-menu.svg) no-repeat center;
   cursor: pointer;
 }
+@media (min-width: $tablet-widths) {
+  .main-menu {
+    background: none;
+  }
+
+  .main-menu__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-menu__item {
+    box-shadow: none;
+    border-bottom: none;
+    width: 20%;
+
+    &:nth-child(2) {
+      margin-right: 20%;
+    }
+
+    &:last-child {
+      box-shadow: none;
+    }
+  }
+
+  .main-menu__link {
+    color: #000;
+    font-size: $font-size;
+    padding: 18px 15px;
+  }
+
+  .main-menu-toggle {
+    display: none;
+  }
+}

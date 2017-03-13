@@ -65,3 +65,49 @@
     vertical-align: middle;
   }
 }
+@media (min-width: $tablet-widths) {
+  .reasons__desc {
+    margin-bottom: 50px;
+  }
+  .reasons__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .reasons__item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--bg-gray {
+      width: 33%;
+      flex-grow: 1;
+      flex-direction: column;
+    }
+  }
+  .reasons__item-wrap {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--triangle {
+      padding-top: 40px;
+      background: $color-main;
+    }
+
+    &--revert {
+      order: 1;
+    }
+  }
+  .reasons__item-image {
+    width: 67%;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-height: 260px; // Как тут лучше сделать?
+    }
+  }
+}
