@@ -7,3 +7,11 @@
   text-transform: uppercase;
   padding: 35px 25px 20px;
 }
+
+@media (min-width: $tablet-widths) {
+  .page-title {
+    font-size: 30px;
+    padding: 60px;
+    padding-bottom: 30px;
+  }
+}
