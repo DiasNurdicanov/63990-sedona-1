@@ -34,3 +34,19 @@
   font-size: $font-size--medium;
   font-weight: 700;
 }
+@media (min-width: $tablet-widths) {
+  .field-checkbox {
+    width: 50%;
+    padding-right: 20px;
+  }
+}
+@media (min-width: $desktop-widths) {
+  .field-checkbox {
+    width: auto;
+    margin-bottom: 0;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}

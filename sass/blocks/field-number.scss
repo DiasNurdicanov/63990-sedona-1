@@ -30,3 +30,43 @@
   padding: 10px 20px;
   color: #ff5c5c;
 }
+@media (min-width: $tablet-widths) {
+  .field-number {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .field-number__input {
+    order: 3;
+  }
+  .field-number__error-message {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: $desktop-widths) {
+  .field-number {
+    width: 50%;
+    padding-right: 80px;
+    margin-bottom: 0;
+  }
+  .field-number__label {
+    order: 2;
+    padding-left: 0;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+  .field-number__input {
+    width: 315px;
+  }
+  .field-number__error-message {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+  .hidden {
+    display: none;
+  }
+}

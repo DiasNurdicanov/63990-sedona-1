@@ -26,3 +26,19 @@
     opacity: 1;
   }
 }
+@media (min-width: $desktop-widths) {
+  .field-email {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .field-email__label {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  .field-email__input {
+    width: 315px;
+  }
+}

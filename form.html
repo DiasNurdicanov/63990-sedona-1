@@ -56,15 +56,17 @@
           </fieldset>
 
           <fieldset class="review__group  review__group--contacts">
-            <div class="review__group-title">Контактная информация:</div>
-            <div class="field-number">
-              <label class="field-number__label" for="nubmer">Контактный телефон*:</label>
-              <input class="field-number__input" type="tel" id="number" name="number" placeholder="Введите телефон" required>
-              <div class="field-number__error-message">Ошибка, перепроверьте номер</div>
+            <div class="review__group-title review__group-title--decor">Контактная информация:</div>
+            <div class="review__fields-wrap">
+              <div class="field-number">
+                <label class="field-number__label" for="nubmer"><span class="hidden">Контактный </span>телефон*:</label>
+                <input class="field-number__input" type="tel" id="number" name="number" placeholder="Введите телефон" required>
+                <div class="field-number__error-message">Ошибка, перепроверьте номер</div>
+              </div>
+              <div class="field-email">
+                <label class="field-email__label" for="email">Электронная почта*:</label>
+                <input class="field-email__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </div>
-            <div class="field-email">
-              <label class="field-email__label" for="email">Электронная почта*:</label>
-              <input class="field-email__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </div>
           </fieldset>
 
@@ -91,35 +93,37 @@
           </fieldset>
 
           <fieldset class="review__group review__group--attraction">
-            <div class="review__group-title">Посещенные достопримечательности:</div>
-            <div class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" id="devils-bridge" value="devils-bridge" checked>
-              <label class="field-checkbox__label" for="devils-bridge">
-                <span class="field-checkbox__label-text">Мост Дьявола</span>
-              </label>
-            </div>
-            <div class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" id="slide-park" value="slide-park" checked>
-              <label class="field-checkbox__label" for="slide-park">
-                <span class="field-checkbox__label-text">Слайд-парк</span>
-              </label>
-            </div>
-            <div class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" id="bell-rock" value="bell-rock">
-              <label class="field-checkbox__label" for="bell-rock">
-                <span class="field-checkbox__label-text">Гора-Колокол</span>
-              </label>
-            </div>
-            <div class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" id="red-rocks" value="red-rocks" checked>
-              <label class="field-checkbox__label" for="red-rocks">
-                <span class="field-checkbox__label-text">Красные скалы</span>
-              </label>
+            <div class="review__group-title review__group-title--decor">Посещенные достопримечательности:</div>
+            <div class="review__group-wrap">
+              <div class="field-checkbox">
+                <input class="field-checkbox__input" type="checkbox" id="devils-bridge" value="devils-bridge" checked>
+                <label class="field-checkbox__label" for="devils-bridge">
+                  <span class="field-checkbox__label-text">Мост Дьявола</span>
+                </label>
+              </div>
+              <div class="field-checkbox">
+                <input class="field-checkbox__input" type="checkbox" id="slide-park" value="slide-park" checked>
+                <label class="field-checkbox__label" for="slide-park">
+                  <span class="field-checkbox__label-text">Слайд-парк</span>
+                </label>
+              </div>
+              <div class="field-checkbox">
+                <input class="field-checkbox__input" type="checkbox" id="bell-rock" value="bell-rock">
+                <label class="field-checkbox__label" for="bell-rock">
+                  <span class="field-checkbox__label-text">Гора-Колокол</span>
+                </label>
+              </div>
+              <div class="field-checkbox">
+                <input class="field-checkbox__input" type="checkbox" id="red-rocks" value="red-rocks" checked>
+                <label class="field-checkbox__label" for="red-rocks">
+                  <span class="field-checkbox__label-text">Красные скалы</span>
+                </label>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="review__group review__group--emotions">
-            <div class="review__group-title">Опишите свои эмоции:</div>
+            <div class="review__group-title review__group-title--decor">Опишите свои эмоции:</div>
             <div class="field-textarea">
               <textarea name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
@@ -127,6 +131,7 @@
 
           <footer class="review__footer">
             <button class="review__btn btn" type="submit">Отправить отзыв</button>
+            <div class="review__text">* — обязательные поля</div>
           </footer>
 
         </form>
