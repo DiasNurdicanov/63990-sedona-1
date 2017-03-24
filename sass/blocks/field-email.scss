@@ -1,0 +1,44 @@
+.field-email {
+
+}
+.field-email__label {
+  display: block;
+  padding-left: 20px;
+  text-transform: uppercase;
+  color: $color-text;
+  margin-bottom: 10px;
+}
+.field-email__input {
+  display: block;
+  width: 100%;
+  height: 58px;
+  background: #f2f2f2;
+  background: url(../img/icon-mail.svg) no-repeat right 20px center,
+              linear-gradient(to left, #e6e6e6 58px, #f2f2f2 58px);
+  border: none;
+  color: #000;
+  font-weight: 700;
+  padding: 20px;
+  padding-right: 78px;
+
+  &::placeholder {
+    color: #000;
+    opacity: 1;
+  }
+}
+@media (min-width: $desktop-widths) {
+  .field-email {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .field-email__label {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  .field-email__input {
+    width: 315px;
+  }
+}

@@ -1,0 +1,132 @@
+.review__desc {
+  text-transform: uppercase;
+  color: $color-text;
+  padding: 0 20px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  p {
+    margin: 0;
+  }
+}
+.review__group {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  padding: 20px;
+  margin: 0;
+}
+.review__group-title {
+  font-size: $font-size--medium;
+  font-weight: 700;
+  line-height: 1.7;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.review__footer {
+  padding: 20px;
+}
+.review__btn {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: $font-size--big;
+}
+.review__text {
+  display: none;
+}
+
+@media (min-width: $tablet-widths) {
+  .review__desc {
+    padding: 0 60px;
+    margin-bottom: 60px;
+  }
+  .review__form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+  }
+  .review__group {
+    width: 100%;
+    border-top: none;
+    padding-top: 40px;
+
+    &--impression {
+      width: 50%;
+      order: -1;
+      border-right: 1px solid #dbdbdb;
+      padding: 0 20px;
+    }
+    &--full-name {
+      width: 50%;
+      padding: 0 20px;
+    }
+  }
+  .review__group-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin: 0 auto;
+  }
+  .review__group-title {
+    font-size: $font-size--big;
+    line-height: 1;
+    margin-bottom: 60px;
+
+    &--decor {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      width: 100%;
+
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        background: #dbdbdb;
+        flex-grow: 1;
+        min-width: 125px;
+      }
+      &::before {
+        margin-right: 60px;
+      }
+      &::after {
+        margin-left: 60px;
+      }
+    }
+  }
+  .review__btn {
+    width: 50%;
+  }
+  .review__footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .review__text {
+    display: block;
+    color: $color-text;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: $desktop-widths) {
+  .review__form {
+    padding: 0 100px;
+  }
+  .review__group {
+
+    &--full-name {
+      padding-left: 80px;
+    }
+  }
+  .review__fields-wrap {
+    display: flex;
+    align-items: flex-end;
+  }
+  .review__group-wrap {
+    width: auto;
+    justify-content: space-between;
+  }
+}
