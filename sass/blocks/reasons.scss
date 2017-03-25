@@ -43,7 +43,7 @@
 
   &--triangle {
     padding-top: 77px;
-    background: $color-main url(../img/bg-triangle.svg) no-repeat center top;
+    background: $color-main url(../img/bg-triangle.svg) no-repeat center top / 100% 37px;
   }
 }
 .reasons__item-title {
@@ -59,6 +59,7 @@
 .reasons__item-desc {
   margin: 0;
   text-transform: uppercase;
+  max-width: 100%;
 }
 .reasons__item-image{
   img {

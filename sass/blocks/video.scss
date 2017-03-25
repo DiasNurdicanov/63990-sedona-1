@@ -23,7 +23,8 @@
 }
 @media (min-width: $tablet-widths) {
   .video {
-    padding-top: 60px;
+    padding: 60px;
+    padding-bottom: 0;
   }
   .video__title {
     font-size: 30px;

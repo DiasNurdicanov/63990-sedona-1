@@ -11,7 +11,7 @@
       <header class="page-header">
         <nav class="main-menu">
           <ul class="main-menu__list">
-            <li class="main-menu__item"><a class="main-menu__link">Главная</a></li>
+            <li class="main-menu__item main-menu__item--active"><a class="main-menu__link">Главная</a></li>
             <li class="main-menu__item"><a href="photo.html" class="main-menu__link">Фото и видео</a></li>
             <li class="main-menu__item"><a href="form.html" class="main-menu__link">Форма отзыва</a></li>
             <li class="main-menu__item"><a href="https://htmlacademy.ru/" class="main-menu__link">HTML Academy</a></li>
@@ -20,7 +20,13 @@
 
         <div class="page-header__row">
           <div class="logo">
-            <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Город Седона">
+            <a class="logo__link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Город Седона">
+              </picture>
+            </a>
           </div>
 
           <span class="main-menu-toggle"></span>
@@ -46,7 +52,16 @@
               <p class="reasons__item-desc">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="reasons__item-image">
-              <img src="http://placehold.it/320x260" width="320" height="260" alt="Настоящий городок">
+              <picture>
+                <source media="(min-width: 1200px)"
+                        srcset="img/photo-city@2x.jpg 2x,
+                                img/photo-city@1x.jpg 1x">
+                <source media="(min-width: 768px)"
+                        srcset="img/photo-city-tablet@2x.jpg 2x,
+                                img/photo-city-tablet@1x.jpg 1x">
+                <img src="img/photo-city-mobile@1x.jpg" width="320" height="260" alt="Настоящий городок"
+                     srcset="img/photo-city-mobile@2x.jpg 2x">
+              </picture>
             </div>
 
             <ul class="features">
@@ -71,7 +86,16 @@
               <p class="reasons__item-desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="reasons__item-image">
-              <img src="http://placehold.it/320x260" width="320" height="260" alt="Мост дьявола">
+              <picture>
+                <source media="(min-width: 1200px)"
+                        srcset="img/photo-bridge@2x.jpg 2x,
+                                img/photo-bridge@1x.jpg 1x">
+                <source media="(min-width: 768px)"
+                        srcset="img/photo-bridge-tablet@2x.jpg 2x,
+                                img/photo-bridge-tablet@1x.jpg 1x">
+                <img src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола"
+                     srcset="img/photo-bridge-mobile@2x.jpg 2x">
+              </picture>
             </div>
           </li>
           <li class="reasons__item reasons__item--bg-gray">

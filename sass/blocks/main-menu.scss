@@ -29,6 +29,16 @@
   text-align: center;
   line-height: 1.4;
   padding: 15px;
+  transition: all 0.15s linear;
+
+  &:hover {
+    background: $color-main--darken;
+  }
+
+  &:active {
+    background: $color-main--darkest;
+    color: #88b6d1;
+  }
 }
 .main-menu-toggle {
   position: absolute;
@@ -61,12 +71,33 @@
     &:last-child {
       box-shadow: none;
     }
+
+    &--active a{
+      color: #766357;
+
+      &:hover {
+        color: #604e43;
+      }
+
+      &:active {
+        color: #d6d0cc;
+      }
+    }
   }
 
   .main-menu__link {
     color: #000;
     font-size: $font-size;
     padding: 18px 15px;
+
+    &:hover {
+      background: none;
+      color: $color-main;
+    }
+
+    &:active {
+      color: #b2b2b2;
+    }
   }
 
   .main-menu-toggle {
