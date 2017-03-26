@@ -10,5 +10,4 @@
     mainMenuList.classList.toggle('main-menu__list--hidden');
     mainMenuToggler.classList.toggle('main-menu__toggle--close');
   });
-
- }());
+}());
