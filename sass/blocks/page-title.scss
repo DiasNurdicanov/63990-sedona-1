@@ -10,8 +10,13 @@
 
 @media (min-width: $tablet-widths) {
   .page-title {
-    font-size: 30px;
+    font-size: $font-size--big;
+    line-height: 1.23;
     padding: 60px;
     padding-bottom: 30px;
+
+    &--big {
+      font-size: $font-size--big + 9;
+    }
   }
 }
