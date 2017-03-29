@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="container">
@@ -137,7 +137,9 @@
         <div class="page-footer__copyright">
           <span class="page-footer__copyright-text">Разработано</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            <svg width="27" height="34" role="img" aria-label="HTML Academy" class="logo-htmlacademy">
+              <use xlink:href="img/svg-sprite.svg#logo-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </footer>
@@ -145,6 +147,7 @@
 
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/map.js" type="text/javascript"></script>
+    <script src="js/svg4everybody.min.js" type="text/javascript"></script>
     <script src="js/main-menu.js" type="text/javascript"></script>
   </body>
 </html>

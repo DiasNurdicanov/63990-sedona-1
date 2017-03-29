@@ -33,6 +33,10 @@
   img {
     vertical-align: middle;
   }
+
+  svg:hover{
+    fill: red;
+  }
 }
 @media (min-width: $tablet-widths) {
   .page-footer {
