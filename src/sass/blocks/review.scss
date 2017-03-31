@@ -3,7 +3,9 @@
   color: $color-text;
   padding: 0 20px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  padding-top: 7px;
+  line-height: 1.75;
 
   p {
     margin: 0;
@@ -12,8 +14,12 @@
 .review__group {
   border: none;
   border-top: 1px solid #e5e5e5;
-  padding: 20px;
+  padding: 16px 20px 24px;
   margin: 0;
+
+  &--attraction .review__group-title {
+    margin-bottom: 12px;
+  }
 }
 .review__group-title {
   font-size: $font-size--medium;
@@ -24,13 +30,14 @@
   margin-bottom: 20px;
 }
 .review__footer {
-  padding: 20px;
+  padding: 23px 20px 33px;
 }
 .review__btn {
   width: 100%;
   text-transform: uppercase;
   font-weight: 700;
   font-size: $font-size--big;
+  padding: 17px 15px;
 }
 .review__text {
   display: none;
@@ -38,8 +45,11 @@
 
 @media (min-width: $tablet-widths) {
   .review__desc {
-    padding: 0 60px;
-    margin-bottom: 60px;
+    padding: 0 ;
+    margin-bottom: 75px;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .review__form {
     display: flex;
@@ -50,34 +60,42 @@
     width: 100%;
     border-top: none;
     padding-top: 40px;
+    padding-bottom: 10px;
 
     &--impression {
       width: 50%;
       order: -1;
       border-right: 1px solid #dbdbdb;
       padding: 0 20px;
+      padding-bottom: 35px;
     }
     &--full-name {
       width: 50%;
       padding: 0 20px;
+      padding-left: 60px;
+      padding-bottom: 35px;
+    }
+    &--emotions {
+      padding-top: 30px;
     }
   }
   .review__group-wrap {
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
-    margin: 0 auto;
+    padding-left: 95px;
   }
   .review__group-title {
     font-size: $font-size--big;
     line-height: 1;
     margin-bottom: 60px;
+    text-align: left;
 
     &--decor {
       display: flex;
       align-items: center;
-      margin-bottom: 40px;
+      margin-bottom: 28px;
       width: 100%;
+      text-align: center;
 
       &::before,
       &::after {
@@ -96,6 +114,13 @@
       }
     }
   }
+  .review__group--attraction .review__group-title {
+    margin-bottom: 41px;
+    line-height: 1.25;
+  }
+  .review__group--emotions .review__group-title {
+    margin-bottom: 63px;
+  }
   .review__btn {
     width: 50%;
   }
@@ -104,6 +129,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 47px 20px 62px;
   }
   .review__text {
     display: block;
@@ -112,6 +138,9 @@
   }
 }
 @media (min-width: $desktop-widths) {
+  .review__desc {
+    margin-bottom: 66px;
+  }
   .review__form {
     padding: 0 100px;
   }
@@ -120,6 +149,23 @@
     &--full-name {
       padding-left: 80px;
     }
+
+    &--contacts {
+      padding-top: 35px;
+    }
+
+    &--emotions {
+      padding-top: 60px;
+    }
+  }
+  .review__group--impression .review__group-title {
+    text-align: center;
+  }
+  .review__group--contacts .review__group-title {
+    margin-bottom: 45px;
+  }
+  .review__group-title-wrap {
+    max-width: 285px;
   }
   .review__fields-wrap {
     display: flex;
@@ -128,5 +174,6 @@
   .review__group-wrap {
     width: auto;
     justify-content: space-between;
+    padding-left: 0;
   }
 }

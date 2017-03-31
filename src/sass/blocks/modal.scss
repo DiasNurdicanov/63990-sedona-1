@@ -1,0 +1,83 @@
+.modal {
+  position: fixed;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 320px;
+  padding: 35px 45px;
+  box-shadow: 0 7px 20px 0 rgba(0,1,1,0.1);
+  text-align: center;
+
+  &--success {
+    padding: 0;
+    padding-top: 35px;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+.modal__title {
+  font-size: $font-size--medium;
+  line-height: 1.45;
+  text-transform: uppercase;
+  margin: 0;
+}
+.modal__desc {
+  text-transform: uppercase;
+  padding: 20px 0;
+
+  p {
+    margin: 0;
+  }
+}
+.modal--success .modal__desc{
+  padding: 20px 45px;
+}
+.modal__footer {
+
+  &--gray {
+    padding: 20px;
+    background: #f2f2f2;
+  }
+}
+.modal__btn {
+  text-transform: uppercase;
+  font-size: $font-size--medium;
+  line-height: 1.45;
+  padding: 15px 70px;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-widths) {
+  .modal {
+    width: 400px;
+    padding-top: 50px;
+
+    &--fail {
+      padding: 35px 50px;
+    }
+
+    &--success {
+      width: 650px;
+    }
+  }
+  .modal__title {
+    font-size: 30px;
+    padding: 0 25px;
+  }
+  .modal--success .modal__desc{
+    padding: 30px 115px;
+  }
+  .modal__footer {
+
+    &--gray {
+      padding: 45px;
+    }
+  }
+  .modal__btn {
+    padding: 15px 120px;
+  }
+}

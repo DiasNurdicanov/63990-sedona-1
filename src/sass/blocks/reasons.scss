@@ -1,11 +1,12 @@
 .reasons {
-  padding-top: 15px;
+  padding-top: 10px;
   text-align: center;
 }
 .reasons__desc {
   text-transform: uppercase;
   color: $color-text;
   padding: 0 20px;
+  padding-bottom: 8px;
 
   p {
     margin: 0;
@@ -32,9 +33,18 @@
       background: $gray--darken;
     }
   }
-  &--bg-gray:last-child::after {
-    display: none;
+  &--bg-gray {
+    padding: 26px 35px;
+
+    .reasons__item-number {
+      margin-bottom: 12px;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
   }
+
 }
 .reasons__item-wrap {
   padding: 40px 20px;
@@ -45,6 +55,14 @@
     padding-top: 77px;
     background: $color-main url(../img/bg-triangle.svg) no-repeat center top / 100% 37px;
   }
+
+  &--revert {
+    padding: 36px 0;
+
+    .reasons__item-number {
+      margin-bottom: 15px;
+    }
+  }
 }
 .reasons__item-title {
   margin: 0;
@@ -54,7 +72,7 @@
   margin-bottom: 5px;
 }
 .reasons__item-number {
-  margin: 5px 0;
+  margin: 0 0 10px;
 }
 .reasons__item-desc {
   margin: 0;
@@ -68,7 +86,7 @@
 }
 @media (min-width: $tablet-widths) {
   .reasons__desc {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
   .reasons__list {
     display: flex;
@@ -83,6 +101,11 @@
       width: 33%;
       flex-grow: 1;
       flex-direction: column;
+      padding: 42px 50px;
+
+      .reasons__item-number {
+        margin-bottom: 23px;
+      }
     }
   }
   .reasons__item-wrap {
@@ -91,6 +114,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 40px 45px;
 
     &--triangle {
       padding-top: 40px;
@@ -101,6 +125,10 @@
       order: 1;
     }
   }
+  .reasons__item-title {
+    font-size: $font-size--big;
+    line-height: 1.33;
+  }
   .reasons__item-image {
     width: 67%;
 
@@ -110,5 +138,16 @@
       object-fit: cover;
       max-height: 260px; // Как тут лучше сделать?
     }
+  }
+}
+@media (min-width: $desktop-widths) {
+  .reasons__item-title {
+    padding: 0 75px;
+  }
+  .reasons__item-desc {
+    padding: 0 40px;
+  }
+  .reasons__item--bg-gray {
+    padding-bottom: 60px;
   }
 }

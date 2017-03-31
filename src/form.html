@@ -96,7 +96,9 @@
           </fieldset>
 
           <fieldset class="review__group review__group--attraction">
-            <div class="review__group-title review__group-title--decor">Посещенные достопримечательности:</div>
+            <div class="review__group-title review__group-title--decor">
+              <span class="review__group-title-wrap">Посещенные достопримечательности:</span>
+            </div>
             <div class="review__group-wrap">
               <div class="field-checkbox">
                 <input class="field-checkbox__input" type="checkbox" id="devils-bridge" value="devils-bridge" checked>
@@ -159,6 +161,26 @@
             <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
           </a>
         </div>
+      </footer>
+    </div>
+
+    <div class="modal modal--fail modal--hidden">
+      <h3 class="modal__title">Что-то пошло не так</h3>
+      <div class="modal__desc">
+        <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <footer class="modal__footer">
+        <button class="btn modal__btn" type="button">Ок</button>
+      </footer>
+    </div>
+
+    <div class="modal modal--success modal--hidden">
+      <h3 class="modal__title">Ваш отзыв отправлен!</h3>
+      <div class="modal__desc">
+        <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <footer class="modal__footer modal__footer--gray">
+        <button class="btn modal__btn" type="button">Закрыть окно</button>
       </footer>
     </div>
 

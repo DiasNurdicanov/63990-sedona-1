@@ -4,16 +4,18 @@
 .photos__desc {
     text-transform: uppercase;
     color: $color-text;
-    padding: 0 20px;
+    padding: 0 25px;
+    padding-top: 5px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    line-height: 1.8;
 
     p {
       margin: 0;
     }
 }
 .photos__item {
-  padding: 20px;
+  padding: 22px 20px 23px;
   border-top: 1px solid #e5e5e5;
 
   &:last-child {
@@ -21,7 +23,7 @@
   }
 }
 .photos__item-image {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   text-align: center;
 
   img {
@@ -38,12 +40,16 @@
 .photos__item-author {
   color: $color-text;
   margin: 0;
+  margin-bottom: 7px;
 }
 
 @media (min-width: $tablet-widths) {
   .photos__desc {
     padding: 0 60px;
-    margin-bottom: 60px;
+    margin-bottom: 68px;
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .photos__list {
     display: flex;
@@ -75,17 +81,27 @@
       height: 267px;
       object-fit: cover;
     }
+
+    &--big img{
+      height: 400px;
+    }
   }
   .photos__item-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #f2f2f2;
-    padding: 20px;
+    padding: 17px 20px;
+  }
+  .photos__item-author {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-widths) {
+  .photos__desc {
+    margin-bottom: 72px;
+  }
   .photos__list {
     padding: 0;
   }
@@ -103,9 +119,6 @@
     &:nth-child(2n + 1) .photos__item-footer{
       background: rgba(0,0,0,.3);
     }
-  }
-  .photos__item-image--big img{
-    height: 400px;
   }
   .photos__item-footer {
     position: absolute;

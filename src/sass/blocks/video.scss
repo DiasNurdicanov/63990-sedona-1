@@ -1,5 +1,5 @@
 .video {
-  padding: 20px 0;
+  padding: 31px 0 37px;
 }
 .video__title {
   font-size: $font-size--medium;
@@ -13,9 +13,9 @@
 .video__desc {
   color: $color-text;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 25px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 37px;
 
   p {
     margin: 0;
@@ -23,15 +23,23 @@
 }
 @media (min-width: $tablet-widths) {
   .video {
-    padding: 60px;
-    padding-bottom: 0;
+    padding: 53px 60px 41px;
   }
   .video__title {
     font-size: 30px;
     padding: 0 60px;
+    margin-bottom: 20px;
   }
   .video__desc {
-    padding: 0 60px;
-    margin-bottom: 60px;
+    padding: 0;
+    margin-bottom: 74px;
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: $desktop-widths) {
+  .video {
+    padding-bottom: 90px;
   }
 }

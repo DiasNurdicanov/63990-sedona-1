@@ -1,22 +1,35 @@
 .page-title {
   margin: 0;
   font-size: $font-size--medium;
-  line-height: 1.44;
+  line-height: 1.45;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  padding: 35px 25px 20px;
+  padding: 40px 25px 20px;
+
+  &--big {
+    padding-top: 38px;
+  }
 }
 
 @media (min-width: $tablet-widths) {
   .page-title {
     font-size: $font-size--big;
     line-height: 1.23;
-    padding: 60px;
-    padding-bottom: 30px;
+    padding: 52px 60px 23px;
+    width: 580px;
+    margin: 0 auto;
 
     &--big {
       font-size: $font-size--big + 9;
+      padding-top: 70px;
+    }
+  }
+}
+@media (min-width: $desktop-widths) {
+  .page-title {
+    &--big {
+      padding-top: 105px;
     }
   }
 }

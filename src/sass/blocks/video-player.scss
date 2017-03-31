@@ -16,15 +16,14 @@
 .video-player__controls {
   position: absolute;
   z-index: 1;
-  bottom: 0;
+  bottom: -1px;
   left: 20px;
   right: 20px;
 }
 .video-player__progress-bar {
   background: rgba(0,0,0,.6);
   height: 45px;
-  padding: 23px;
-  padding-bottom: 20px;
+  padding: 22px 23px 20px;
 }
 .video-player__track {
   height: 3px;
@@ -38,7 +37,7 @@
   border-radius: 50%;
   background: #fff;
   top: 19px;
-  left: 15%;
+  left: 20.55%;
 }
 .video-player__buttons {
   height: 65px;
@@ -60,7 +59,7 @@
 
   &--subtitles {
     background-image: url(../img/icon-video-subtitles.svg);
-    margin-right: 5px;
+    margin-right: 13px;
   }
 
   &--fullscreen {
@@ -86,6 +85,7 @@
     background: rgba(0,0,0,.6);
     padding: 15px;
     height: 95px;
+    bottom: -2px;
   }
   .video-player__progress-bar,
   .video-player__buttons {
@@ -102,9 +102,10 @@
   }
   .video-player__toggle {
     top: 27px;
+    left: 28%;
   }
   .video-player__button {
-    width: 65px;
+    width: 62px;
     height: 65px;
   }
 }
