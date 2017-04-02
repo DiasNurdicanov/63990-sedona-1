@@ -86,6 +86,10 @@
       height: 400px;
     }
   }
+  .photos__item-desc {
+    width: 70%;
+    word-break: break-all;
+  }
   .photos__item-footer {
     display: flex;
     justify-content: space-between;
@@ -95,6 +99,10 @@
   }
   .photos__item-author {
     margin-bottom: 0;
+  }
+  .photos__like {
+    text-align: right;
+    width: 30%;
   }
 }
 

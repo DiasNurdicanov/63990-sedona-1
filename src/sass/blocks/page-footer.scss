@@ -34,7 +34,11 @@
   }
 
   svg:hover{
-    fill: red;
+    fill: $color-main;
+  }
+
+  svg:active{
+    fill: rgba(0,0,0,.3);
   }
 }
 @media (min-width: $tablet-widths) {

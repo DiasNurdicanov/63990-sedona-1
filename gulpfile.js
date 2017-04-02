@@ -7,14 +7,15 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
-var sourcemaps = require('gulp-sourcemaps');
-var rename = require('gulp-rename');
+var sourcemaps = require("gulp-sourcemaps");
+var rename = require("gulp-rename");
 var del = require("del");
-var copy = require('gulp-copy');
-var imagemin = require('gulp-imagemin');
-var svgstore = require('gulp-svgstore');
-var svgmin = require('gulp-svgmin');
-var run = require('run-sequence');
+var copy = require("gulp-copy");
+var imagemin = require("gulp-imagemin");
+var objectFit = require("postcss-object-fit-images")
+var svgstore = require("gulp-svgstore");
+var svgmin = require("gulp-svgmin");
+var run = require("run-sequence");
 var server = require("browser-sync").create();
 
 gulp.task("clean", function() {
@@ -28,7 +29,7 @@ gulp.task("copy", function() {
     "src/js/**",
     "src/*.html"
   ])
-  .pipe(copy('build', {prefix: 1}));
+  .pipe(copy("build", {prefix: 1}));
 });
 
 gulp.task("html:copy", function() {
@@ -53,7 +54,8 @@ gulp.task("style", function() {
       ]}),
       mqpacker({
         sort: true
-      })
+      }),
+      objectFit()
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
