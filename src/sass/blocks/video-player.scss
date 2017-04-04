@@ -1,0 +1,149 @@
+.video-player {
+  position: relative;
+  z-index: 1;
+}
+.video-player__preview {
+  text-align: center;
+
+  img {
+    vertical-align: middle;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+.video-player__controls {
+  height: 65px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  background: #f2f2f2;
+}
+.video-player__progress-bar {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: -45px;
+  width: 100%;
+  background: rgba(0,0,0,.6);
+  padding: 0 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video-player__track {
+  width: 100%;
+  height: 3px;
+  background: rgba(255,255,255,.2);
+}
+.video-player__toggle {
+  position: absolute;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20.55%;
+}
+.video-player__button {
+  width: 65px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--replay {
+    margin-right: auto;
+  }
+  &--subtitles {
+    width: 50px;
+  }
+}
+.video-player__icon {
+  fill: #5c6870;
+  transition: fill 0.15s linear;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: rgba(51,51,51,.3);
+  }
+}
+
+@media (min-width: $tablet-widths) {
+  .video-player {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
+  }
+  .video-player__preview {
+
+    img {
+      height: 500px;
+    }
+  }
+  .video-player__controls {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    height: 93px;
+    background: rgba(0,0,0,.6);
+    padding-right: 16px;
+  }
+  .video-player__progress-bar {
+    position: relative;
+    left: 0;
+    top: 0;
+    background: none;
+    width: auto;
+    flex-grow: 1;
+    padding-left: 0;
+    padding-right: 35px;
+  }
+
+  .video-player__toggle {
+    left: 27%;
+  }
+  .video-player__button {
+    width: 90px;
+
+    &--subtitles {
+      width: 45px;
+    }
+    &--fullscreen {
+      width: 70px;
+    }
+  }
+  .video-player__icon {
+    fill: #fff;
+
+    &:hover {
+      fill: #fff;
+    }
+
+    &:active {
+      fill: #fff;
+    }
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .video-player__controls {
+    padding-right: 18px;
+  }
+  .video-player__toggle {
+    left: 20%;
+  }
+}

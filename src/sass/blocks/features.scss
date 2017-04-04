@@ -1,0 +1,121 @@
+.features {
+  margin: 0;
+  padding: 30px 20px 16px;
+  list-style: none;
+  text-align: left;
+}
+.features__item {
+  position: relative;
+  padding: 7px 20px 20px 50px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 39px;
+    height: 37px;
+    background: url(../img/icon-house.svg) no-repeat;
+    background-size: 39px 37px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+  }
+
+  &--gift::before {
+    background-image: url(../img/icon-gift.svg);
+  }
+
+  &--eat::before {
+    width: 40px;
+    height: 35px;
+    top: 0;
+    left: -2px;
+    background-image: url(../img/icon-burger.svg);
+    background-size: 40px 35px;
+  }
+}
+.features__item-title {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: $font-size--medium;
+  line-height: 1.44;
+}
+.features__item-desc {
+  margin: 0;
+  color: $color-text;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+  br {
+    display: none;
+  }
+}
+@media (min-width: $tablet-widths) {
+  .features {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0 41px;
+  }
+  .features__item {
+    width: 33%;
+    flex-grow: 1;
+    padding: 20px 50px;
+    text-align: center;
+
+    &::before {
+      position: relative;
+      top: 0;
+      left: -2px;
+      margin: 0 auto;
+      width: 72px;
+      height: 72px;
+      background-size: 75px 72px;
+      margin-bottom: 25px;
+    }
+
+    &--eat {
+
+      &::before {
+        top: 3px;
+        left: -3px;
+        width: 77px;
+        background-size: 77px 68px;
+      }
+    }
+
+    &--gift {
+      order: 3;
+      padding: 20px 40px;
+
+      &::before {
+        width: 64px;
+        height: 75px;
+        top: -3px;
+        background-size: 64px 75px;
+        transform: none;
+        margin-bottom: 22px;
+      }
+    }
+  }
+  .features__item-title {
+    font-size: $font-size--big;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: $desktop-widths) {
+  .features {
+    padding-bottom: 63px;
+  }
+  .features__item-title{
+    margin-bottom: 19px;
+  }
+  .features__item-desc{
+
+    br {
+      display: block;
+    }
+  }
+}

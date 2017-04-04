@@ -1,0 +1,32 @@
+.like {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 0;
+}
+.like__icon {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 22px;
+  height: 20px;
+  margin-right: 14px;
+  opacity: 0.3;
+  fill: #000;
+}
+.like__count {
+  display: inline-block;
+  vertical-align: bottom;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 14px;
+}
+@media (min-width: $desktop-widths) {
+  .like {
+    color: #fff;
+  }
+  .like__icon {
+    margin-right: 10px;
+    opacity: 1;
+    fill: #fff;
+  }
+}
