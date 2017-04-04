@@ -108,6 +108,8 @@
 
 @media (min-width: $desktop-widths) {
   .photos__desc {
+    padding-top: 6px;
+    line-height: 1.7;
     margin-bottom: 72px;
   }
   .photos__list {
@@ -126,6 +128,14 @@
 
     &:nth-child(2n + 1) .photos__item-footer{
       background: rgba(0,0,0,.3);
+    }
+
+    &:nth-child(n + 2) .photos__item-footer{
+      padding-right: 30px;
+    }
+
+    &:nth-child(3) .photos__item-footer{
+      padding-right: 35px;
     }
   }
   .photos__item-footer {

@@ -70,6 +70,10 @@
   font-size: $font-size--medium;
   font-weight: 700;
   margin-bottom: 5px;
+
+  br {
+    display: none;
+  }
 }
 .reasons__item-number {
   margin: 0 0 10px;
@@ -79,6 +83,9 @@
   text-transform: uppercase;
   max-width: 100%;
 }
+.reasons__item-br {
+  display: none;
+}
 .reasons__item-image{
   img {
     vertical-align: middle;
@@ -86,7 +93,8 @@
 }
 @media (min-width: $tablet-widths) {
   .reasons__desc {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
+    padding-bottom: 9px;
   }
   .reasons__list {
     display: flex;
@@ -101,20 +109,36 @@
       width: 33%;
       flex-grow: 1;
       flex-direction: column;
-      padding: 42px 50px;
+      padding: 44px 50px;
+
+      &:nth-child(3) {
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+
+      &:nth-child(4) {
+        padding-left: 55px;
+        padding-right: 55px;
+      }
+
+      &::after {
+        display: none;
+      }
 
       .reasons__item-number {
-        margin-bottom: 23px;
+        margin-bottom: 20px;
       }
     }
   }
   .reasons__item-wrap {
-    width: 33%;
+    width: 33.33%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px 45px;
+    flex-grow: 1;
+    min-height: 256px;
 
     &--triangle {
       padding-top: 40px;
@@ -127,10 +151,25 @@
   }
   .reasons__item-title {
     font-size: $font-size--big;
-    line-height: 1.33;
+    line-height: 1.25;
+    margin-bottom: 10px;
+
+    br {
+      display: block;
+    }
+  }
+  .reasons__item-number {
+    margin-bottom: 20px;
+  }
+  .reasons__item-desc {
+    line-height: 1.5;
+  }
+  .reasons__item-br {
+    display: inline;
   }
   .reasons__item-image {
-    width: 67%;
+    flex-grow: 1;
+    width: 66.66%;
     position: relative;
     z-index: 1;
 
@@ -146,6 +185,18 @@
   }
 }
 @media (min-width: $desktop-widths) {
+  .reasons__item {
+
+    &--bg-gray {
+      padding-bottom: 66px;
+
+
+      &:nth-child(4) {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    }
+  }
   .reasons__item-title {
     padding: 0 75px;
     margin-bottom: 9px;
@@ -153,12 +204,11 @@
   .reasons__item-number {
     margin-bottom: 20px;
   }
+
   .reasons__item-desc {
-    padding: 0 40px;
+    padding: 0 20px;
   }
-  .reasons__item--bg-gray {
-    padding-bottom: 60px;
-  }
+
   .reasons__item-wrap {
 
     &--triangle {
@@ -173,6 +223,10 @@
 
       .reasons__item-number {
         margin-bottom: 20px;
+      }
+
+      .reasons__item-desc {
+        padding: 0 45px;
       }
     }
   }

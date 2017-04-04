@@ -57,6 +57,19 @@
 }
 @media (min-width: $desktop-widths) {
   .page-footer {
-    padding: 35px 120px;
+    padding: 35px 132px;
+    padding-right: 44px;
+
+    &--form-page {
+      padding: 40px 120px;
+      padding-left: 132px;
+
+      .social {
+        margin-right: 23px;
+      }
+    }
+  }
+  .page-footer__copyright-text {
+    margin-right: 12px;
   }
 }

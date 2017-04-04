@@ -11,10 +11,10 @@
   &::before {
     content: "";
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 39px;
+    height: 37px;
     background: url(../img/icon-house.svg) no-repeat;
-    background-size: 40px auto;
+    background-size: 39px 37px;
     position: absolute;
     left: 0;
     top: -5px;
@@ -22,11 +22,15 @@
 
   &--gift::before {
     background-image: url(../img/icon-gift.svg);
-    height: 50px;
   }
 
   &--eat::before {
+    width: 40px;
+    height: 35px;
+    top: 0;
+    left: -2px;
     background-image: url(../img/icon-burger.svg);
+    background-size: 40px 35px;
   }
 }
 .features__item-title {
@@ -37,48 +41,81 @@
   font-size: $font-size--medium;
   line-height: 1.44;
 }
-.feature__item-desc {
+.features__item-desc {
   margin: 0;
   color: $color-text;
   line-height: 1.5;
   text-transform: uppercase;
+
+  br {
+    display: none;
+  }
 }
 @media (min-width: $tablet-widths) {
   .features {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 45px;
+    padding: 40px 0 41px;
   }
   .features__item {
     width: 33%;
     flex-grow: 1;
-    padding: 20px 30px;
+    padding: 20px 50px;
     text-align: center;
 
     &::before {
       position: relative;
+      top: 0;
+      left: -2px;
       margin: 0 auto;
-      width: 90px;
-      height: 90px;
-      background-size: 80% auto;
-      background-position: center bottom;
-      margin-bottom: 16px;
+      width: 72px;
+      height: 72px;
+      background-size: 75px 72px;
+      margin-bottom: 25px;
+    }
+
+    &--eat {
+
+      &::before {
+        top: 3px;
+        left: -3px;
+        width: 77px;
+        background-size: 77px 68px;
+      }
     }
 
     &--gift {
       order: 3;
+      padding: 20px 40px;
+
+      &::before {
+        width: 64px;
+        height: 75px;
+        top: -3px;
+        background-size: 64px 75px;
+        transform: none;
+        margin-bottom: 22px;
+      }
     }
   }
   .features__item-title {
     font-size: $font-size--big;
+    line-height: 1.4;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: $desktop-widths) {
   .features {
-    padding-bottom: 62px;
+    padding-bottom: 63px;
   }
   .features__item-title{
     margin-bottom: 19px;
+  }
+  .features__item-desc{
+
+    br {
+      display: block;
+    }
   }
 }

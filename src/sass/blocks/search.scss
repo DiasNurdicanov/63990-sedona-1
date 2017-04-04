@@ -10,9 +10,13 @@
   font-weight: 700;
   line-height: 1.27;
 }
-.search_desc {
+.search__desc {
   margin: 0;
   margin-bottom: 35px;
+
+  br {
+    display: none;
+  }
 }
 .search__btn {
   font-size: $font-size--big;
@@ -25,25 +29,28 @@
 }
 @media (min-width: $tablet-widths) {
   .search {
-    padding-top: 45px;
+    padding-top: 50px;
     padding-bottom: 58px;
   }
   .search__title {
     font-size: 30px;
+    line-height: 1.18;
     margin-bottom: 30px;
   }
-  .search_desc {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
+  .search__desc {
+    padding: 0 60px;
+    margin-bottom: 41px;
+
+    br {
+      display: block;
+    }
   }
 }
-@media (min-width: $tablet-widths) {
+@media (min-width: $desktop-widths) {
   .search {
     padding-bottom: 66px;
   }
-  .search_desc {
-    margin-bottom: 47px;
+  .search__desc {
+    margin-bottom: 46px;
   }
 }
